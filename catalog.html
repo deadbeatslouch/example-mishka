@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мишка: Каталог товаров</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--logo">
+            <a href="index.html">
+              <picture>
+                <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - магазин изделий ручной работы">
+              </picture>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--order"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search">
+            <a href="#">
+              Поиск по сайту
+              <svg class="main-nav__search-icon" width="17.6" height="17.6">
+                <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a href="#">
+              Корзина: пока пуста
+              <svg class="main-nav__cart-icon" width="20.3" height="18.9">
+                <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--new"><a href="#">Новые поступления</a></li>
+          <li class="main-nav__item main-nav__item--sale"><a href="#">Распродажа</a></li>
+          <li class="main-nav__item main-nav__item--delivery"><span>Бесплатная доставка по России</span></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-title page-title--catalog">
+      <h1>Каталог товаров</h1>
+    </div>
+    <div class="product__container-wrapper">
+      <article class="product">
+        <a class="product__photo-link" href="#">
+          Зайчик-попрыгайчик
+          <picture>
+            <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </picture>
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h1 class="product__title"><a href="#">Зайчик-попрыгайчик</a></h1>
+            <span class="product__options">Рост 30 см, вес 200 г</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">1 200 руб.</span>
+            <a class=".product__order" href="#">
+              Добавить в корзину
+              <svg class=".product__cart-icon" width="20" height="19">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="product">
+        <a class="product__photo-link" href="#">
+          Корзинка для белья
+          <picture>
+            <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+          </picture>
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h1 class="product__title"><a href="#">Корзинка для белья</a></h1>
+            <span class="product__options">Диаметр 15 см, высота 10 см</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">690 руб.</span>
+            <a class=".product__order" href="#">
+              Добавить в корзину
+              <svg class=".product__cart-icon" width="20" height="19">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="product">
+        <a class="product__photo-link" href="#">
+          Большая корзинка для игрушек
+          <picture>
+            <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+          </picture>
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h1 class="product__title"><a href="#">Большая корзинка для игрушек</a></h1>
+            <span class="product__options">Диаметр 30 см, высота 30 см</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">1 500 руб.</span>
+            <a class=".product__order" href="#">
+              Добавить в корзину
+              <svg class=".product__cart-icon" width="20" height="19">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <article class="production">
+      <div class="production__title">
+        <h1>Процесс производства</h1>
+      </div>
+      <div class="production__video">
+        <a class=".production__play-button">Play</a>
+        <picture>
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства">
+        </picture>
+      </div>
+      <div class="production__description">
+        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__order-button" href="#">Сделать заказ</a>
+      </div>
+    </article>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo-container">
+        <a class="page-footer__logo-link" href="index.html">
+          <svg class=".page-footer__logo" width="102" height="34">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="page-footer__social-links">
+        <a class="page-footer__social-link page-footer__social-link--insta" href="#">
+          <svg class="page-footer__social-icon" width="22" height="21">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
+          </svg>
+          Мы в Instagram
+        </a>
+        <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+          <svg class="page-footer__social-icon" width="15" height="28">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+          </svg>
+          Мы в Facebook
+        </a>
+        <a class="page-footer__social-link page-footer__social-link--tw" href="#">
+          <svg class="page-footer__social-icon" width="23" height="20">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+          </svg>
+          Мы в Twitter
+        </a>
+      </div>
+      <div class="page-footer__developer">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+          <span>Разработано</span>
+          <svg class="page-footer__logo-academy" width="27" height="34">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
