@@ -1,0 +1,40 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "start": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadbeatslouch/example-mishka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadbeatslouch/example-mishka/issues"
+  },
+  "homepage": "https://github.com/deadbeatslouch/example-mishka#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "css-mqpacker": "^7.0.0",
+    "del": "^4.1.0",
+    "gulp": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "less": "^3.9.0",
+    "run-sequence": "^2.2.1"
+  }
+}
