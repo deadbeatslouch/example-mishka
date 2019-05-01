@@ -1,0 +1,24 @@
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  font-family: "Verdana", Arial, sans-serif;
+}
+
+@media @tablet-width {
+  .page-header__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 768px;
+  }
+}
+
+@media @desktop-width {
+  .page-header__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1150px;
+  }
+}
