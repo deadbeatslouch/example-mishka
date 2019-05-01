@@ -5,22 +5,21 @@ const plumber = require("gulp-plumber");
 const less = require('gulp-less');
 const sourcemaps = require('gulp-sourcemaps');
 const debug = require('gulp-debug');
-const gulpIf = require('gulp-if');
+const gulpIf = require('gulp-if'); // Для более лакончиной реализации isDevelopment
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const mqpacker = require("css-mqpacker");
 
-const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
+const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development'; // Узнает этап разработки для sourceMap 'NODE_ENV=production gulp style'
 
 gulp.task('style', function() {
 
   return gulp.src('less/style.less')
-    .pipe(gulpIf(isDevelopment, sourcemaps.init()))
+    .pipe(gulpIf(isDevelopment, sourcemaps.init())) // file.sourceMap
     .pipe(plumber())
     .pipe(less())
-    .pipe(gulpIf(isDevelopment, sourcemaps.write()))
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 1 version",
@@ -33,6 +32,7 @@ gulp.task('style', function() {
         sort: false
       })
     ]))
+    .pipe(gulpIf(isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest('build/css'))
 });
 
