@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Вязание на заказ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -54,18 +55,18 @@
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <div class="order-form__item-wrapper">
-        <div class="order-form__item order-form__item--type">
-          <div class="order-form__item-name order-form__item-name--type">
-            <span>Тип</span>
-          </div>
-          <div class="order-form__options order-form__option order-form__option--type">
-            <input type="radio" name="type" id="type-home" value="Home accessories" checked>
-            <label for="type-home">Аксессуар для интерьера</label>
-            <input type="radio" name="type" id="type-toy" value="Toys">
-            <label for="type-toy">Детская игрушка</label>
+          <div class="order-form__item  order-form__item--type">
+            <div class="order-form__item-name  order-form__item-name--type">
+              <span>Тип</span>
+            </div>
+            <div class="order-form__options  order-form__options--type">
+              <input type="radio" name="type" id="type-home" value="Home accessories" checked>
+              <label for="type-home">Аксессуар для интерьера</label>
+              <input type="radio" name="type" id="type-toy" value="Toys">
+              <label for="type-toy">Детская игрушка</label>
+            </div>
           </div>
         </div>
-      </div>
       <div class="order-form__item-wrapper order-form__item-wrapper--background">
         <div class="order-form__item order-form__item--color">
           <div class="order-form__item-name order-form__item-name--color">
@@ -115,9 +116,9 @@
           </div>
           <div class="order-form__options order-form__options--phone-num">
             <div class="order-form__option-wrapper">
-              <label><span class="visually-hidden">Укажите ваш номер телефона</span>
+              <span class="visually-hidden">Укажите ваш номер телефона</span>
                 <input type="tel" name="phone-number" placeholder="+7 XXX XX XX" required>
-              </label>
+
               <svg class="order-form__phone-icon" width="24.8" height="24.3">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
               </svg>
@@ -130,9 +131,9 @@
           </div>
           <div class="order-form__options order-form__options--e-mail">
             <div class="order-form__option-wrapper">
-              <label><span class="visually-hidden">Укажите ваше электронную почту</span>
+              <span class="visually-hidden">Укажите ваше электронную почту</span>
                 <input type="text" name="e-mail" placeholder="Ваш e-mail" required>
-              </label>
+
               <svg class="order-form__e-mail-icon" width="32" height="32">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
               </svg>
@@ -162,7 +163,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__logo-container">
         <a class="page-footer__logo-link" href="index.html">
-          <svg class=".page-footer__logo" width="102" height="34">
+          <svg class="page-footer__logo" width="102" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
           </svg>
         </a>
