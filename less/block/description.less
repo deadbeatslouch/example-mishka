@@ -1,6 +1,5 @@
 .description {
   position: relative;
-  background-color: #f9f9f9;
 }
 
 .description__wrapper {
@@ -16,26 +15,26 @@
   justify-content: center;
   padding-top: 86px;
   padding-bottom: 123px;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
   background-size: 575px 373px;
 
-  @media @retina {
+  /* @media @retina {
     background-image: url("../img/hero-mobile@2x.jpg");
-  }
+  } */
 }
 
 .description__title {
   .title();
+  font-size: 27px;
 
-  width: 240px;
+  width: 260px;
   text-align: center;
 }
 
-.description__types-list {
-  padding: 0;
-  margin: 0;
-  font-family: "Tahoma", Arial, sans-serif;
-  list-style: none;
+.description__type-list {
+  .reser-list();
 }
 
 .description__type {
@@ -45,7 +44,7 @@
     padding-top: 25px;
     padding-bottom: 30px;
     padding-left: 9%;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     text-decoration: none;
     color: @white;
@@ -73,7 +72,7 @@
     position: relative;
 
     a {
-      background-color: @aqua;
+      background-color: @cyan;
 
       &:hover {
         background-color: #59d5bc;
@@ -85,7 +84,7 @@
     position: relative;
 
     a {
-      background-color: #56c3b2;
+      background-color: @moderatecyan;
 
       &:hover {
         background-color: #46c1ae;
@@ -122,7 +121,7 @@
   height: 62.5px;
   opacity: 0.5;
   cursor: pointer;
-  fill: @green-krayola;
+  fill: #3bb09d;
   transition: opacity 0.3s ease,
               top 0.3s ease;
 }
@@ -136,12 +135,12 @@
   height: 59.6px;
   opacity: 0.5;
   cursor: pointer;
-  fill: @green-krayola;
+  fill: #35a999;
   transition: opacity 0.3s ease,
               top 0.3s ease;
 }
 
-@media @tablet-width {
+/* @media @tablet-width {
   .description {
 
     &::after {
@@ -184,6 +183,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    list-style: none;
   }
 
   .description__type {
@@ -246,16 +246,16 @@
     top: 31px;
     right: 10.1%;
   }
-}
+} */
 
 
-@media @retina-tablet {
+/* @media @retina-tablet {
   .description__header {
     background-image: url("../img/hero-desktop@2x.jpg");
   }
-}
+} */
 
-@media @desktop-width {
+/* @media @desktop-width {
   .description {
 
     &::after {
@@ -302,4 +302,4 @@
   .description__toys-icon {
     right: 6.7%
   }
-}
+} */
