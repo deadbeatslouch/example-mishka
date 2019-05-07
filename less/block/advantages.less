@@ -1,0 +1,249 @@
+.advantages {
+  .container-adaptive();
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.6%;
+}
+
+.advantages__title {
+  .title();
+
+  padding-top: 29px;
+}
+
+.advantages__list {
+  .reser-list();
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+  padding-left: 2px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: @black;
+}
+
+.advantages__item {
+  position: relative;
+  width: 75%;
+  padding-top: 55px;
+  padding-bottom: 28px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &--ecology {
+    width: 63%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 8px;
+      display: block;
+      width: 32px;
+      height: 37.3px;
+      background: url("../img/icon-feature-1.svg") no-repeat 50% 50%;
+      background-size: 32px 37.3px;
+    }
+  }
+
+  &--scandinavian {
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      display: block;
+      width: 46.5px;
+      height: 27.3px;
+      background: url("../img/icon-feature-3.svg") no-repeat 50% 50%;
+      background-size: 46.5px 27.3px;
+    }
+  }
+
+  &--likes {
+    width: 65%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      display: block;
+      width: 33px;
+      height: 27.9px;
+      background: url("../img/icon-feature-5.svg") no-repeat 50% 50%;
+      background-size: 33px 27.9px;
+    }
+  }
+
+  &--handmade {
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      display: block;
+      width: 34.3px;
+      height: 34.3px;
+      background: url("../img/icon-feature-2.svg") no-repeat 50% 50%;
+      background-size: 34.3px;
+    }
+  }
+
+  &--domestic {
+    width: 90%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -5px;
+      display: block;
+      width: 54.1px;
+      height: 23.2px;
+      background: url("../img/icon-feature-4.svg") no-repeat 50% 50%;
+      background-size: 54.1px 23.2px;
+    }
+  }
+
+  &--pack {
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      display: block;
+      width: 32.7px;
+      height: 32.5px;
+      background: url("../img/icon-feature-6.svg") no-repeat 50% 50%;
+      background-size: 32.7px 32.5px;
+    }
+  }
+}
+
+/* @media @tablet-width {
+  .advantages {
+    padding-left: 46px;
+    padding-bottom: 20px;
+  }
+
+  .advantages__title {
+    padding-top: 47px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 49px;
+    padding-left: 4px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .advantages__item {
+    width: 46.5%;
+    padding-bottom: 52px;
+
+    &:last-child {
+      padding-bottom: 52px;
+    }
+
+    &--ecology {
+      order: -6;
+      padding-right: 100px;
+
+      &::before {
+          top: 3px;
+          left: 9px;
+      }
+    }
+
+    &--scandinavian {
+      order: -4;
+      padding-right: 50px;
+
+      &::before {
+        top: 4px;
+        left: 1px;
+      }
+    }
+
+    &--likes {
+      order: -2;
+      padding-right: 90px;
+
+      &::before {
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    &--handmade {
+      order: -5;
+
+      &::before {
+        top: 6px;
+        left: 3px;
+      }
+    }
+
+    &--domestic {
+      order: -3;
+
+      &::before {
+        top: 7px;
+        left: -6px;
+      }
+    }
+
+    &--pack {
+      order: -1;
+      padding-right: 30px;
+
+      &::before {
+        top: 5px;
+      }
+    }
+  }
+} */
+
+/* @media @desktop-width {
+  .advantages {
+    padding-left: 222px;
+    padding-bottom: 2px;
+  }
+
+  .advantages__title {
+    padding-top: 58px;
+  }
+
+  .advantages__list {
+    padding-top: 47px;
+    padding-left: 3px;
+    padding-bottom: 19px;
+  }
+
+  .advantages__item {
+    width: 37.9%;
+
+    &--scandinavian {
+      padding-right: 90px;
+    }
+
+    &--likes {
+      padding-right: 110px;
+    }
+
+    &--handmade {
+      padding-right: 80px;
+    }
+  }
+} */
