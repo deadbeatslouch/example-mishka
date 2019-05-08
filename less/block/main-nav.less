@@ -76,7 +76,6 @@
     padding-bottom: 28px;
     padding-left: 23.25%;
     font-weight: bold;
-    font-size: 17px;
     color: @black;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -188,7 +187,13 @@
               fill 0.3s ease;
 }
 
-/* @media @mobile-width-only {
+@media @mobile-width-only {
+  .main-nav__item {
+    a {
+      font-size: 17px;
+    }
+  }
+
   .main-nav--closed .main-nav__item {
     position: absolute;
     top: -1000px;
@@ -219,9 +224,9 @@
       display: none;
     }
   }
-} */
+}
 
-/* @media @tablet-width {
+@media @tablet-width {
   .main-nav {
     width: 1150px;
   }
@@ -241,7 +246,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 26%;
-    font-size: 14px;
     border-bottom: none;
 
     a,
@@ -287,7 +291,7 @@
     &--cart {
       order: -1;
       width: 40.86%;
-      font-size: 16px;
+      font-size: 17px;
       border-bottom: 1px solid @lightgray;
 
       a {
@@ -323,7 +327,6 @@
         padding-right: 50px;
         font-weight: normal;
         text-align: right;
-        color: @darkgray;
       }
     }
   }
@@ -337,9 +340,9 @@
     top: 35px;
     left: 10%;
   }
-} */
+}
 
-/* @media @desktop-width {
+@media @desktop-width {
   .main-nav {
     max-width: 1300px;
     margin: 0 auto;
@@ -351,7 +354,6 @@
   }
 
   .main-nav__item {
-    font-size: 14px;
     width: 20.7%;
 
     &--catalog,
@@ -385,13 +387,13 @@
 
     &--catalog {
       order: -8;
-      font-size: 16px;
+      font-size: 17px;
       border-bottom: 1px solid @lightgray;
     }
 
     &--order {
       order: -7;
-      font-size: 16px;
+      font-size: 17px;
       border-left: 1px solid @lightgray;
       border-bottom: 1px solid @lightgray;
 
@@ -409,7 +411,7 @@
     &--cart {
       order: -4;
       width: 27.3%;
-      font-size: 16px;
+      font-size: 17px;
     }
 
     &--sale,
@@ -426,7 +428,6 @@
     &--new {
       display: flex;
       order: -3;
-      font-size: 14px;
 
       a {
         padding-left: 50px;
@@ -436,7 +437,6 @@
     &--sale {
       display: flex;
       order: -2;
-      font-size: 14px;
 
       a {
         padding-left: 36px;
@@ -446,8 +446,6 @@
     &--delivery {
       order: 1;
       flex-grow: 1;
-      font-size: 14px;
     }
   }
 }
- */

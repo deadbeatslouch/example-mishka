@@ -4,20 +4,26 @@
   min-width: 320px;
 }
 
-/* @media @tablet-width {
+ @media @mobile-width-only {
+  .page-header__wrapper {
+    .container-adaptive();
+  }
+}
+
+@media @tablet-width {
   .page-header__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 768px;
   }
-} */
+}
 
-/* @media @desktop-width {
+@media @desktop-width {
   .page-header__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 1150px;
   }
-} */
+}
