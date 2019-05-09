@@ -168,7 +168,7 @@
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
           <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
         </picture>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3361.3918426248565!2d30.32018901307999!3d59.937193949122026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466516317017" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3361.3918426248565!2d30.32018901307999!3d59.937193949122026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466516317017" width="320" height="457" style="border:0" allowfullscreen></iframe>
       </div>
       <a class="contacts__write-us-button button" href="#">Напишите нам</a>
     </section>
@@ -210,5 +210,26 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal-cart">
+    <h2 class="modal-cart__title">Добавить  в корзину</h2>
+    <form class="modal-cart__form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="modal-cart__choice">
+        <legend class="modal-cart__description">Выберите размер:</legend>
+        <div class="modal-cart__container">
+          <input type="radio" class="visually-hidden" name="size" id="size-s" value="s" checked>
+          <label for="size-s">s</label>
+          <input type="radio" class="visually-hidden" name="size" id="size-m" value="m">
+          <label for="size-m">m</label>
+          <input type="radio" class="visually-hidden" name="size" id="size-l" value="l">
+          <label for="size-l">l</label>
+        </div>
+        <button class="modal-cart__add-button" type="submit">Добавить</button>
+      </fieldset>
+    </form>
+  </section>
+  <div class="modal-overlay"></div>
+
+ <script src="js/script.js"></script>
 </body>
 </html>
