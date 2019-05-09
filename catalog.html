@@ -185,5 +185,26 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal-cart">
+    <h2 class="modal-cart__title">Добавить  в корзину</h2>
+    <form class="modal-cart__form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="modal-cart__choice">
+        <legend class="modal-cart__description">Выберите размер:</legend>
+        <div class="modal-cart__container">
+          <input type="radio" class="visually-hidden" name="size" id="size-s" value="s" checked>
+          <label for="size-s">s</label>
+          <input type="radio" class="visually-hidden" name="size" id="size-m" value="m">
+          <label for="size-m">m</label>
+          <input type="radio" class="visually-hidden" name="size" id="size-l" value="l">
+          <label for="size-l">l</label>
+        </div>
+        <button class="modal-cart__add-button" type="submit">Добавить</button>
+      </fieldset>
+    </form>
+  </section>
+  <div class="modal-overlay"></div>
+
+ <script src="js/script.js"></script>
 </body>
 </html>
