@@ -1,5 +1,6 @@
 .description {
   position: relative;
+
   background-color: #f9f9f9;
 }
 
@@ -12,26 +13,31 @@
 
 .description__header {
   display: flex;
-  align-self: stretch;
-  justify-content: center;
+
   padding-top: 86px;
   padding-bottom: 123px;
+
   background-color: #f9f9f9;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image: url('../img/hero-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: 575px 373px;
 
+  align-self: stretch;
+  justify-content: center;
+
   @media @retina {
-    background-image: url("../img/hero-mobile@2x.jpg");
+    background-image: url('../img/hero-mobile@2x.jpg');
   }
 }
 
 .description__title {
   .title();
+
   font-size: 27px;
 
   width: 260px;
+
   text-align: center;
 }
 
@@ -40,33 +46,37 @@
 }
 
 .description__type {
-
   a {
+    font-size: 19px;
+    font-weight: bold;
+
     display: block;
+
     padding-top: 25px;
     padding-bottom: 30px;
     padding-left: 9%;
-    font-size: 19px;
-    font-weight: bold;
+
+    transition: background .4s ease,
+    color .1s ease,
+    padding .4s ease,
+    margin .4s ease;
     text-decoration: none;
+
     color: @white;
-    transition: background 0.4s ease,
-                color 0.1s ease,
-                padding 0.4s ease,
-                margin 0.4s ease;
 
     &:hover {
-      padding-bottom: 35px;
       margin-top: -5px;
+      padding-bottom: 35px;
     }
 
     &:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, .3);
     }
   }
 
   span {
     display: block;
+
     width: 130px;
   }
 
@@ -97,79 +107,97 @@
 
 .description__type:hover .description__home-goods-icon {
   top: 18px;
-  opacity: 0.7;
+
+  opacity: .7;
 }
 
 .description__type:active .description__home-goods-icon {
   top: 18px;
-  opacity: 0.3;
+
+  opacity: .3;
 }
 
 .description__type:hover .description__toys-icon {
   top: 16px;
-  opacity: 0.7;
+
+  opacity: .7;
 }
 
 .description__type:active .description__toys-icon {
   top: 16px;
-  opacity: 0.3;
+
+  opacity: .3;
 }
 
 .description__home-goods-icon {
   position: absolute;
   top: 23px;
   right: 11.3%;
+
   width: 40px;
   height: 62.5px;
-  opacity: 0.5;
+
   cursor: pointer;
+  transition: opacity .3s ease,
+  top .3s ease;
+
+  opacity: .5;
+
   fill: #3bb09d;
-  transition: opacity 0.3s ease,
-              top 0.3s ease;
 }
 
 .description__toys-icon {
   position: absolute;
   top: 21px;
   right: 8.5%;
+
   display: block;
+
   width: 60px;
   height: 59.6px;
-  opacity: 0.5;
+
   cursor: pointer;
+  transition: opacity .3s ease,
+  top .3s ease;
+
+  opacity: .5;
+
   fill: #35a999;
-  transition: opacity 0.3s ease,
-              top 0.3s ease;
 }
 
 @media @tablet-width {
   .description {
-
     &::after {
-      content: "";
       position: absolute;
-      left: 0;
+      z-index: 2;
       bottom: -5px;
+      left: 0;
+
       display: flex;
+
       width: 100%;
       height: 15px;
-      background-image: url("../img/bg-zigzag-fill.svg");
+
+      content: '';
+
+      background-image: url('../img/bg-zigzag-fill.svg');
       background-repeat: repeat-x;
       background-position: -5px top;
       background-size: auto 23px;
-      z-index: 2;
     }
   }
 
   .description__wrapper {
     z-index: 1;
+
     margin-top: -60px;
   }
 
   .description__header {
     padding-top: 151px;
     padding-bottom: 375px;
-    background-image: url("../img/hero-desktop@1x.jpg");
+
+    background-image: url('../img/hero-desktop@1x.jpg');
     background-size: 1150px 746px;
   }
 
@@ -184,19 +212,22 @@
   .description__type-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+
     list-style: none;
+
+    justify-content: center;
   }
 
   .description__type {
     width: 43.5%;
 
     a {
+      font-size: 20px;
+      line-height: 30px;
+
       width: 100%;
       padding-top: 27px;
       padding-left: 36px;
-      font-size: 20px;
-      line-height: 30px;
     }
 
     // &--home-goods {
@@ -218,8 +249,8 @@
     // &--toys {
     //
     //  // &::before {
-        // top: 31px;
-        // right: 10.1%;
+    // top: 31px;
+    // right: 10.1%;
     //  // }
     //  //
     //  // &:hover::before {
@@ -253,17 +284,17 @@
 
 @media @retina-tablet {
   .description__header {
-    background-image: url("../img/hero-desktop@2x.jpg");
+    background-image: url('../img/hero-desktop@2x.jpg');
   }
 }
 
 @media @desktop-width {
   .description {
-
     &::after {
       bottom: 0;
-      background-size: auto;
+
       background-position: 0 top;
+      background-size: auto;
     }
   }
 
@@ -302,6 +333,6 @@
   }
 
   .description__toys-icon {
-    right: 6.7%
+    right: 6.7%;
   }
 }

@@ -7,8 +7,10 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   padding-bottom: 23px;
+
+  align-items: center;
 }
 
 .page-footer__logo-container {
@@ -17,15 +19,18 @@
 
 .page-footer__social-links {
   display: flex;
+
   width: 260px;
   padding-top: 24px;
   padding-bottom: 28px;
+
   border-bottom: 1px solid #e5e5e5;
 }
 
 .page-footer__social-link {
   font-size: 0;
   line-height: 0;
+
   box-sizing: content-box;
 
   &--insta {
@@ -54,31 +59,37 @@
 }
 
 .page-footer__social-link:active .page-footer__social-icon {
+  opacity: .3;
+
   fill: @krayola;
-  opacity: 0.3;
 }
 
 .page-footer__social-icon {
+  transition: opacity .3s ease,
+  fill .3s ease;
+
   fill: @blackbrown;
-  transition: opacity 0.3s ease,
-              fill 0.3s ease;
 }
 
 .page-footer__developer {
   display: flex;
+
   width: 320px;
   padding-top: 22px;
   padding-left: 67px;
 }
 
 .page-footer__copyright-link {
-  display: flex;
   font-size: 19px;
-  line-height: 18px;
   font-weight: bold;
+  line-height: 18px;
+
+  display: flex;
+
+  transition: all .3s ease;
   text-decoration: none;
+
   color: @black;
-  transition: all 0.3s ease;
 
   span {
     padding-top: 2px;
@@ -91,24 +102,27 @@
 }
 
 .page-footer__copyright-link:active .page-footer__logo-academy {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .page-footer__logo-academy {
+  transition: fill .3s ease,
+  opacity .3s ease;
+
   fill: @cyan;
-  transition: fill 0.3s ease,
-              opacity 0.3s ease;
 }
 
 @media @tablet-width {
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+
     padding-top: 51px;
     padding-right: 50px;
     padding-bottom: 51px;
     padding-left: 50px;
+
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .page-footer__logo-container {
@@ -121,7 +135,7 @@
   }
 
   .page-footer__logo {
-    transition: fill 0.3s ease;
+    transition: fill .3s ease;
   }
 
   .page-footer__logo-link:hover .page-footer__logo {
@@ -135,21 +149,22 @@
   .page-footer__social-links {
     width: auto;
     padding-top: 6px;
-    padding-left: 20px;
     padding-bottom: 0;
+    padding-left: 20px;
+
     border-bottom: none;
   }
 
   .page-footer__developer {
-    padding-left: 0;
     width: auto;
     padding-top: 7px;
+    padding-left: 0;
   }
 }
 
 @media @desktop-width {
   .page-footer__wrapper {
-    padding-left: 51px;
     padding-right: 51px;
+    padding-left: 51px;
   }
 }

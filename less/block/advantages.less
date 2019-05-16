@@ -3,6 +3,7 @@
 
   display: flex;
   flex-direction: column;
+
   padding-left: 8.6%;
 }
 
@@ -15,18 +16,22 @@
 .advantages__list {
   .reser-list();
 
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+
   display: flex;
   flex-direction: column;
+
   padding-top: 29px;
   padding-left: 2px;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
+
   color: @black;
 }
 
 .advantages__item {
   position: relative;
+
   width: 75%;
   padding-top: 55px;
   padding-bottom: 28px;
@@ -39,29 +44,36 @@
     width: 63%;
 
     &::before {
-      content: "";
       position: absolute;
       top: 2px;
       left: 8px;
+
       display: block;
+
       width: 32px;
       height: 37.3px;
-      background: url("../img/icon-feature-1.svg") no-repeat 50% 50%;
+
+      content: '';
+
+      background: url('../img/icon-feature-1.svg') no-repeat 50% 50%;
       background-size: 32px 37.3px;
     }
   }
 
   &--scandinavian {
-
     &::before {
-      content: "";
       position: absolute;
       top: 3px;
       left: 0;
+
       display: block;
+
       width: 46.5px;
       height: 27.3px;
-      background: url("../img/icon-feature-3.svg") no-repeat 50% 50%;
+
+      content: '';
+
+      background: url('../img/icon-feature-3.svg') no-repeat 50% 50%;
       background-size: 46.5px 27.3px;
     }
   }
@@ -70,29 +82,36 @@
     width: 65%;
 
     &::before {
-      content: "";
       position: absolute;
       top: 7px;
       left: 7px;
+
       display: block;
+
       width: 33px;
       height: 27.9px;
-      background: url("../img/icon-feature-5.svg") no-repeat 50% 50%;
+
+      content: '';
+
+      background: url('../img/icon-feature-5.svg') no-repeat 50% 50%;
       background-size: 33px 27.9px;
     }
   }
 
   &--handmade {
-
     &::before {
-      content: "";
       position: absolute;
       top: 5px;
       left: 3px;
+
       display: block;
+
       width: 34.3px;
       height: 34.3px;
-      background: url("../img/icon-feature-2.svg") no-repeat 50% 50%;
+
+      content: '';
+
+      background: url('../img/icon-feature-2.svg') no-repeat 50% 50%;
       background-size: 34.3px;
     }
   }
@@ -101,29 +120,36 @@
     width: 90%;
 
     &::before {
-      content: "";
       position: absolute;
       top: 6px;
       left: -5px;
+
       display: block;
+
       width: 54.1px;
       height: 23.2px;
-      background: url("../img/icon-feature-4.svg") no-repeat 50% 50%;
+
+      content: '';
+
+      background: url('../img/icon-feature-4.svg') no-repeat 50% 50%;
       background-size: 54.1px 23.2px;
     }
   }
 
   &--pack {
-
     &::before {
-      content: "";
       position: absolute;
       top: 4px;
       left: 3px;
+
       display: block;
+
       width: 32.7px;
       height: 32.5px;
-      background: url("../img/icon-feature-6.svg") no-repeat 50% 50%;
+
+      content: '';
+
+      background: url('../img/icon-feature-6.svg') no-repeat 50% 50%;
       background-size: 32.7px 32.5px;
     }
   }
@@ -131,8 +157,8 @@
 
 @media @tablet-width {
   .advantages {
-    padding-left: 46px;
     padding-bottom: 20px;
+    padding-left: 46px;
   }
 
   .advantages__title {
@@ -140,12 +166,15 @@
   }
 
   .advantages__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 49px;
-    padding-left: 4px;
     font-size: 20px;
     line-height: 22px;
+
+    flex-direction: row;
+
+    padding-top: 49px;
+    padding-left: 4px;
+
+    flex-wrap: wrap;
   }
 
   .advantages__item {
@@ -157,18 +186,20 @@
     }
 
     &--ecology {
-      order: -6;
       padding-right: 100px;
 
+      order: -6;
+
       &::before {
-          top: 3px;
-          left: 9px;
+        top: 3px;
+        left: 9px;
       }
     }
 
     &--scandinavian {
-      order: -4;
       padding-right: 50px;
+
+      order: -4;
 
       &::before {
         top: 4px;
@@ -177,8 +208,9 @@
     }
 
     &--likes {
-      order: -2;
       padding-right: 90px;
+
+      order: -2;
 
       &::before {
         top: 8px;
@@ -205,8 +237,9 @@
     }
 
     &--pack {
-      order: -1;
       padding-right: 30px;
+
+      order: -1;
 
       &::before {
         top: 5px;
@@ -217,8 +250,8 @@
 
 @media @desktop-width {
   .advantages {
-    padding-left: 222px;
     padding-bottom: 2px;
+    padding-left: 222px;
   }
 
   .advantages__title {
@@ -227,8 +260,8 @@
 
   .advantages__list {
     padding-top: 47px;
-    padding-left: 3px;
     padding-bottom: 19px;
+    padding-left: 3px;
   }
 
   .advantages__item {
