@@ -40,5 +40,9 @@
     "less": "^3.9.0",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   }
 }
