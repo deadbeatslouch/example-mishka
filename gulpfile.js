@@ -110,27 +110,23 @@ gulp.task("build", gulp.series(
   "webp"
 ));
 
-gulp.task("watch", function() {
+gulp.task("serve", function() {
+  browserSync.init({
+    server: "build"
+  });
+
   gulp.watch("less/**/*.less", gulp.series("style"));
 
-  gulp.watch("*.html", gulp.series("html"));
+  gulp.watch("*.html", gulp.series("html")).on("change", browserSync.reload);
 
   gulp.watch([
     "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**"
   ],
-   gulp.series("copy"));
-});
-
-gulp.task("serve", function() {
-  browserSync.init({
-    server: "build"
-  });
-
-  browserSync.watch("build/**/*.*").on("change", browserSync.reload);
+   gulp.series("copy")).on("change", browserSync.reload);
 });
 
 gulp.task("dev",
-  gulp.series("build", gulp.parallel("watch", "serve"))
+  gulp.series("build", "serve")
 );
