@@ -12,13 +12,14 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mqpacker");
 var rename = require("gulp-rename");
-var minify = require("gulp-csso");
+var mincss = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var minhtml = require("gulp-htmlmin");
 
 var isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == "development"; // Узнает этап разработки для sourceMap "NODE_ENV=production gulp style"
 
@@ -42,7 +43,7 @@ gulp.task("style", function() {
     ]))
     .pipe(gulpIf(isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(mincss())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.reload({stream: true}));
@@ -82,6 +83,7 @@ gulp.task("html", function(){
     .pipe(posthtml([
       include()
     ]))
+    .pipe(minhtml({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
