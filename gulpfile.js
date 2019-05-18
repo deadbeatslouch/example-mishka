@@ -41,9 +41,9 @@ gulp.task("style", function() {
         sort: false
       })
     ]))
-    .pipe(gulpIf(isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest("build/css"))
     .pipe(mincss())
+    .pipe(gulpIf(isDevelopment, sourcemaps.write()))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.reload({stream: true}));
